@@ -1,6 +1,6 @@
 <hr>  </hr>
 
-<a href="https://github.com/nickabattista/MAT341"><img src="https://static.wixstatic.com/media/50968c_33c03cf3a123446aa7a5169cf66a8121~mv2.png/v1/fill/w_566,h_202,al_c,q_80,usm_0.66_1.00_0.01/50968c_33c03cf3a123446aa7a5169cf66a8121~mv2.webp" align="right" height="450" width="450" ></a>
+<a href="https://github.com/nickabattista/MAT341"><img src="https://static.wixstatic.com/media/50968c_33c03cf3a123446aa7a5169cf66a8121~mv2.png/v1/fill/w_566,h_202,al_c,q_80,usm_0.66_1.00_0.01/50968c_33c03cf3a123446aa7a5169cf66a8121~mv2.webp" align="right" height="150" width="450" ></a>
 <H1> MAT 341 Computational Mathematics </H1>
 
 Author: Nicholas A. Battista, Ph.D. <br>
