@@ -1,0 +1,39 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% FUNCTION: compare sums: a_n = SUM_{j=1}^n^2 n / (n^2+j^2)
+%
+%       FINDS: smallest possible integer N such that |a_{n-1}-a_n| <= 0.01
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+function Series_Compare()
+
+% initialize the error to get into loop
+err = 1;
+
+% n: initialize counter
+n=1;
+
+% find a_1
+a_n(n) = compute_an(n);
+
+while err > 0.01
+    
+    a_n(n) = compute_an(n);
+    
+    
+end
+
+
+function val = compute_an(n)
+
+% initialize sum
+sum = 0;
+
+% compute series
+for j=1:n^2
+    
+    sum = sum + n / (n^2 + j^2);
+    
+end
