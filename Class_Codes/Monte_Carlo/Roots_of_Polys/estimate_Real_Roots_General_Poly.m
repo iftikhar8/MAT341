@@ -10,14 +10,14 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function est_prob = estimate_Real_Roots_General_Poly(N,deg)
+function est_prob = estimate_Real_Roots_General_Poly(N,deg,L)
 
 count_Real = 0;
 
 for i=1:N
    
     % sample [-1,1] for quadratic coefficients
-    coeffs = rand(deg+1,1);
+    coeffs = 2*L*rand(deg+1,1)-L;
    
     % compute roots of polynomial using MATLAB built in poly roots solver
     rootz = roots( coeffs );
