@@ -15,7 +15,7 @@ a = 0;  % lower bound of interval
 b = 2;  % upper bound of interval
 
 
-x3 = 0.0;     % define first point ("oldest point")
+x3 = 0.0;   % define first point ("oldest point")
 x2 = 0.6;   % define second point ("second oldest point")
 x1 = 1.2;   % define third point ("newest point")
 
