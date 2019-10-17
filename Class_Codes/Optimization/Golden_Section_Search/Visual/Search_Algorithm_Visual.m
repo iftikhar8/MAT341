@@ -111,7 +111,7 @@ function plot_Function(xVec,x1,x2,a,b,flag)
 yVec = zeros( size( xVec ) );
 
 % vertical line
-yVert = 0:0.025:0.5;
+yVert = -0.05:0.025:0.55;
 x1_Vec = x1*ones( size(yVert) );
 x2_Vec = x2*ones( size(yVert) );
 a_Vec = a*ones( size(yVert) );
@@ -130,15 +130,15 @@ fs = 18;
 % Plots the function, f(x) 
 plot(xVec,yVec,'b.-','LineWidth',lw,'MarkerSize',ms); hold on;
 if flag == 1
-    plot(x1_Vec,yVert,'g:','LineWidth',lw,'MarkerSize',ms); hold on;
-    plot(x2_Vec,yVert,'g:','LineWidth',lw,'MarkerSize',ms); hold on;
+    plot(x1_Vec,yVert,'g:','LineWidth',lw-1,'MarkerSize',ms-5); hold on;
+    plot(x2_Vec,yVert,'g:','LineWidth',lw-1,'MarkerSize',ms-5); hold on;
     plot(a_Vec,yVert,'r-','LineWidth',lw,'MarkerSize',ms); hold on;
     plot(b_Vec,yVert,'r-','LineWidth',lw,'MarkerSize',ms); hold on;
 end
 xlabel('x');
 ylabel('y');
 set(gca,'FontSize',fs);
-axis([0 2 0 0.5]);
+axis([-0.1 2.1 -0.05 0.55]);
     
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
