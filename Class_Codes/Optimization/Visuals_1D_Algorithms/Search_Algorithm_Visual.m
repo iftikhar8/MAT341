@@ -79,6 +79,7 @@ while err > tol
     % compute new error*
     err = b-a;
     
+    % Visualize convergence on function plot
     plot_Function(aOrig:(bOrig-aOrig)/1e3:bOrig,x1,x2,a,b,flag);
     pause();
     clf;
