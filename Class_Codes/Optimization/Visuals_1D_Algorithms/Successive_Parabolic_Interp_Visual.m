@@ -10,7 +10,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function N = Successive_Parabolic_Interp_Visual(tol)
+function N = Successive_Parabolic_Interp_Visual()
 
 a = 0;  % lower bound of interval
 b = 2;  % upper bound of interval
@@ -21,6 +21,7 @@ x2 = 0.3;   % define second point ("second oldest point")
 x1 = 1.4;   % define third point ("newest point")
 
 err = 1;     % initialize error to get into while loop
+tol = 1e-8; % initialize error tolerance
 
 % initialize function values
 f3 = f(x3);
